@@ -1,0 +1,141 @@
+/* app/css/layout.css */
+.navbar {
+  background: var(--surface);
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 20;
+}
+
+.brand h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+.toolbar {
+  background: var(--surface);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  min-width: 0;
+}
+
+.top-toolbar {
+  justify-content: space-between;
+}
+
+.editor-wrapper {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+textarea#texInput {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  border: 1px solid var(--border-color);
+  background: var(--bg);
+  color: var(--text);
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
+}
+
+textarea#texInput:focus {
+  outline: 2px solid var(--text);
+  outline-offset: -1px;
+}
+
+textarea#bibInput {
+  width: 100%;
+  padding: 15px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  border: 1px solid var(--border-color);
+  background: var(--bg);
+  color: var(--text);
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea#bibInput:focus {
+  outline: 2px solid var(--text);
+  outline-offset: -1px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .toolbar {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .editor-wrapper {
+    padding: 15px;
+  }
+
+  textarea#texInput {
+    padding: 15px;
+  }
+}
