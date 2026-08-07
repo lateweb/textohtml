@@ -1,0 +1,80 @@
+/* template/css/layout.css */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  color: var(--text-color);
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1001;
+  height: 60px;
+  transition: background-color 0.1s;
+}
+
+.top-bar-inner {
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-toggle-btn,
+.theme-toggle-fixed {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-toggle-btn:hover,
+.theme-toggle-fixed:hover {
+  background-color: var(--border-color);
+}
+
+.article-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 100px 20px 60px;
+}
+
+@media (max-width: 768px) {
+  .top-bar-inner {
+    padding: 0 15px;
+  }
+  .article-wrapper {
+    padding: 90px 15px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-inner {
+    padding: 0 12px;
+  }
+  .article-wrapper {
+    padding: 80px 12px 30px;
+  }
+}
