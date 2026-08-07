@@ -1,0 +1,28 @@
+# docs/file-tree.txt
+textohtml/
+├── index.html
+├── app/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── layout.css
+│   │   └── components.css
+│   └── js/
+│       ├── theme.js
+│       ├── bib-parser.js
+│       ├── latex-to-html.js
+│       ├── html-generator.js
+│       └── converter.js
+├── template/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── article.css
+│   │   ├── layout.css
+│   │   └── sidebar.css
+│   └── js/
+│       ├── theme.js
+│       ├── bib-parser-minimal.js
+│       ├── math-utils.js
+│       ├── sidebar.js
+│       └── article-core.js
+└── docs/
+    └── file-tree.txt
